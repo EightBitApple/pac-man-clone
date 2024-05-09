@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="28" height="36" tilewidth="20" tileheight="20" infinite="0" nextlayerid="13" nextobjectid="373">
+ <tileset firstgid="1" source="spritesheet.tsx"/>
+ <layer id="1" name="walls" width="28" height="36">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+32,33,33,33,33,33,33,33,33,33,33,33,33,40,2147483688,33,33,33,33,33,33,33,33,33,33,33,33,2684354592,
+1610612769,0,0,0,0,0,0,0,0,0,0,0,0,1610612784,2684354608,0,0,0,0,0,0,0,0,0,0,0,0,2684354593,
+1610612769,0,1610612778,48,48,42,0,1610612778,48,48,48,42,0,1610612784,2684354608,0,1610612778,48,48,48,42,0,1610612778,48,48,42,0,2684354593,
+1610612769,0,1610612784,21,21,2684354608,0,1610612784,21,21,21,2684354608,0,1610612784,2684354608,0,1610612784,21,21,21,2684354608,0,1610612784,21,21,2684354608,0,2684354593,
+1610612769,0,3221225514,3221225520,3221225520,2684354602,0,3221225514,3221225520,3221225520,3221225520,2684354602,0,3221225514,2684354602,0,3221225514,3221225520,3221225520,3221225520,2684354602,0,3221225514,3221225520,3221225520,2684354602,0,2684354593,
+1610612769,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354593,
+1610612769,0,1610612778,48,48,42,0,1610612778,42,0,1610612778,48,48,48,48,48,48,42,0,1610612778,42,0,1610612778,48,48,42,0,2684354593,
+1610612769,0,3221225514,3221225520,3221225520,2684354602,0,1610612784,2684354608,0,3221225514,3221225520,3221225520,2684354609,536870961,3221225520,3221225520,2684354602,0,1610612784,2684354608,0,3221225514,3221225520,3221225520,2684354602,0,2684354593,
+1610612769,0,0,0,0,0,0,1610612784,2684354608,0,0,0,0,1610612784,2684354608,0,0,0,0,1610612784,2684354608,0,0,0,0,0,0,2684354593,
+1610612768,3221225505,3221225505,3221225505,3221225505,2684354601,0,1610612784,1610612785,48,48,42,0,1610612784,2684354608,0,1610612778,48,48,3221225521,2684354608,0,41,3221225505,3221225505,3221225505,3221225505,3221225504,
+0,0,0,0,0,1610612769,0,1610612784,536870961,3221225520,3221225520,2684354602,0,3221225514,2684354602,0,3221225514,3221225520,3221225520,2147483697,2684354608,0,2684354593,0,0,0,0,0,
+0,0,0,0,0,1610612769,0,1610612784,2684354608,0,0,0,0,0,0,0,0,0,0,1610612784,2684354608,0,2684354593,0,0,0,0,0,
+0,0,0,0,0,1610612769,0,1610612784,2684354608,0,32,33,33,33,33,33,33,2684354592,0,1610612784,2684354608,0,2684354593,0,0,0,0,0,
+33,33,33,33,33,3221225513,0,3221225514,2684354602,0,1610612769,0,0,0,0,0,0,2684354593,0,3221225514,2684354602,0,1610612777,33,33,33,33,33,
+0,0,0,0,0,0,0,0,0,0,1610612769,0,0,0,0,0,0,2684354593,0,0,0,0,0,0,0,0,0,0,
+33,33,33,33,33,2684354592,0,1610612778,42,0,1610612769,0,0,0,0,0,0,2684354593,0,1610612778,42,0,32,33,33,33,33,33,
+0,0,0,0,0,2684354593,0,1610612784,2684354608,0,1610612768,3221225505,3221225505,3221225505,3221225505,3221225505,3221225505,3221225504,0,1610612784,2684354608,0,1610612769,0,0,0,0,0,
+0,0,0,0,0,2684354593,0,1610612784,2684354608,0,0,0,0,0,0,0,0,0,0,1610612784,2684354608,0,1610612769,0,0,0,0,0,
+0,0,0,0,0,2684354593,0,1610612784,2684354608,0,1610612778,48,48,48,48,48,48,42,0,1610612784,2684354608,0,1610612769,0,0,0,0,0,
+41,3221225505,3221225505,3221225505,3221225505,3221225504,0,3221225514,2684354602,0,3221225514,3221225520,3221225520,2684354609,49,3221225520,3221225520,2684354602,0,3221225514,2684354602,0,1610612768,3221225505,3221225505,3221225505,3221225505,2684354601,
+2684354593,0,0,0,0,0,0,0,0,0,0,0,0,1610612784,2684354608,0,0,0,0,0,0,0,0,0,0,0,0,1610612769,
+2684354593,0,2147483683,33,40,42,0,2147483683,33,33,33,35,0,536870954,1073741866,0,2147483683,33,33,33,35,0,1610612778,2147483688,33,35,0,1610612769,
+2684354593,0,0,0,1610612784,2684354608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610612784,2684354608,0,0,0,1610612769,
+1610612775,48,42,0,1610612784,2684354608,0,1610612778,42,0,1610612778,48,48,48,48,48,48,42,0,1610612778,42,0,1610612784,2684354608,0,1610612778,48,3758096423,
+536870951,3221225520,2684354602,0,3221225514,2684354602,0,1610612784,2684354608,0,3221225514,3221225520,3221225520,2684354609,49,3221225520,3221225520,2684354602,0,1610612784,2684354608,0,3221225514,2684354602,0,3221225514,3221225520,2684354599,
+2684354593,0,0,0,0,0,0,1610612784,2684354608,0,0,0,0,1610612784,2684354608,0,0,0,0,1610612784,2684354608,0,0,0,0,0,0,1610612769,
+2684354593,0,1610612778,48,48,48,48,3221225521,1610612785,48,48,42,0,1610612784,2684354608,0,1610612778,48,48,3221225521,1610612785,48,48,48,48,42,0,1610612769,
+2684354593,0,3221225514,3221225520,3221225520,3221225520,3221225520,3221225520,3221225520,3221225520,3221225520,2684354602,0,3221225514,2684354602,0,3221225514,3221225520,3221225520,3221225520,3221225520,3221225520,3221225520,3221225520,3221225520,2684354602,0,1610612769,
+2684354593,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1610612769,
+1610612777,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,3221225513,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="wall_collisions">
+  <object id="4" name="wall" x="0" y="60" width="560" height="20"/>
+  <object id="6" name="wall" x="0" y="80" width="20" height="160"/>
+  <object id="7" name="wall" x="0" y="240" width="120" height="100"/>
+  <object id="8" name="wall" x="0" y="360" width="120" height="100"/>
+  <object id="9" name="wall" x="40" y="480" width="40" height="20"/>
+  <object id="10" name="wall" x="80" y="480" width="40" height="80"/>
+  <object id="11" name="wall" x="80" y="480" width="40" height="80"/>
+  <object id="12" name="wall" x="0" y="460" width="20" height="180"/>
+  <object id="13" name="wall" x="20" y="520" width="40" height="40"/>
+  <object id="14" name="wall" x="40" y="580" width="200" height="40"/>
+  <object id="15" name="wall" x="140" y="520" width="40" height="60"/>
+  <object id="16" name="wall" x="0" y="640" width="560" height="20"/>
+  <object id="17" name="wall" x="320" y="580" width="200" height="40"/>
+  <object id="18" name="wall" x="380" y="520" width="40" height="60"/>
+  <object id="19" name="wall" x="320" y="480" width="100" height="20"/>
+  <object id="20" name="wall" x="140" y="480" width="100" height="20"/>
+  <object id="21" name="wall" x="200" y="520" width="160" height="40"/>
+  <object id="22" name="wall" x="260" y="560" width="40" height="60"/>
+  <object id="23" name="wall" x="200" y="300" width="160" height="100"/>
+  <object id="24" name="wall" x="200" y="420" width="160" height="40"/>
+  <object id="25" name="wall" x="260" y="460" width="40" height="40"/>
+  <object id="26" name="wall" x="480" y="480" width="40" height="20"/>
+  <object id="27" name="wall" x="500" y="520" width="40" height="40"/>
+  <object id="28" name="wall" x="540" y="460" width="20" height="180"/>
+  <object id="29" name="wall" x="440" y="360" width="120" height="100"/>
+  <object id="30" name="wall" x="440" y="240" width="120" height="100"/>
+  <object id="31" name="wall" x="380" y="360" width="40" height="100"/>
+  <object id="32" name="wall" x="320" y="240" width="60" height="40"/>
+  <object id="33" name="wall" x="140" y="360" width="40" height="100"/>
+  <object id="34" name="wall" x="200" y="180" width="160" height="40"/>
+  <object id="35" name="wall" x="380" y="180" width="40" height="160"/>
+  <object id="36" name="wall" x="180" y="240" width="60" height="40"/>
+  <object id="37" name="wall" x="140" y="180" width="40" height="160"/>
+  <object id="38" name="wall" x="260" y="220" width="40" height="60"/>
+  <object id="39" name="wall" x="320" y="100" width="100" height="60"/>
+  <object id="40" name="wall" x="440" y="100" width="80" height="60"/>
+  <object id="41" name="wall" x="440" y="180" width="80" height="40"/>
+  <object id="42" name="wall" x="260" y="80" width="40" height="80"/>
+  <object id="43" name="wall" x="540" y="80" width="20" height="160"/>
+  <object id="50" name="wall" x="440" y="480" width="40" height="80"/>
+  <object id="54" name="wall" x="40" y="100" width="80" height="60"/>
+  <object id="55" name="wall" x="40" y="180" width="80" height="40"/>
+  <object id="56" name="wall" x="140" y="100" width="100" height="60"/>
+ </objectgroup>
+ <objectgroup id="8" name="pellets" visible="0">
+  <object id="57" name="pellet_spawn" x="20" y="620" width="20" height="20"/>
+  <object id="58" name="pellet_spawn" x="40" y="620" width="20" height="20"/>
+  <object id="59" name="pellet_spawn" x="60" y="620" width="20" height="20"/>
+  <object id="60" name="pellet_spawn" x="80" y="620" width="20" height="20"/>
+  <object id="61" name="pellet_spawn" x="100" y="620" width="20" height="20"/>
+  <object id="62" name="pellet_spawn" x="120" y="620" width="20" height="20"/>
+  <object id="63" name="pellet_spawn" x="140" y="620" width="20" height="20"/>
+  <object id="64" name="pellet_spawn" x="160" y="620" width="20" height="20"/>
+  <object id="65" name="pellet_spawn" x="180" y="620" width="20" height="20"/>
+  <object id="66" name="pellet_spawn" x="200" y="620" width="20" height="20"/>
+  <object id="67" name="pellet_spawn" x="220" y="620" width="20" height="20"/>
+  <object id="68" name="pellet_spawn" x="240" y="620" width="20" height="20"/>
+  <object id="69" name="pellet_spawn" x="260" y="620" width="20" height="20"/>
+  <object id="70" name="pellet_spawn" x="280" y="620" width="20" height="20"/>
+  <object id="71" name="pellet_spawn" x="300" y="620" width="20" height="20"/>
+  <object id="72" name="pellet_spawn" x="320" y="620" width="20" height="20"/>
+  <object id="73" name="pellet_spawn" x="340" y="620" width="20" height="20"/>
+  <object id="74" name="pellet_spawn" x="360" y="620" width="20" height="20"/>
+  <object id="75" name="pellet_spawn" x="380" y="620" width="20" height="20"/>
+  <object id="76" name="pellet_spawn" x="400" y="620" width="20" height="20"/>
+  <object id="77" name="pellet_spawn" x="420" y="620" width="20" height="20"/>
+  <object id="78" name="pellet_spawn" x="440" y="620" width="20" height="20"/>
+  <object id="79" name="pellet_spawn" x="460" y="620" width="20" height="20"/>
+  <object id="80" name="pellet_spawn" x="480" y="620" width="20" height="20"/>
+  <object id="81" name="pellet_spawn" x="480" y="620" width="20" height="20"/>
+  <object id="82" name="pellet_spawn" x="500" y="620" width="20" height="20"/>
+  <object id="83" name="pellet_spawn" x="500" y="620" width="20" height="20"/>
+  <object id="84" name="pellet_spawn" x="520" y="620" width="20" height="20"/>
+  <object id="85" name="pellet_spawn" x="520" y="600" width="20" height="20"/>
+  <object id="86" name="pellet_spawn" x="520" y="580" width="20" height="20"/>
+  <object id="87" name="pellet_spawn" x="520" y="560" width="20" height="20"/>
+  <object id="88" name="pellet_spawn" x="500" y="560" width="20" height="20"/>
+  <object id="89" name="pellet_spawn" x="480" y="560" width="20" height="20"/>
+  <object id="90" name="pellet_spawn" x="460" y="560" width="20" height="20"/>
+  <object id="95" name="pellet_spawn" x="440" y="560" width="20" height="20"/>
+  <object id="96" name="pellet_spawn" x="420" y="560" width="20" height="20"/>
+  <object id="97" name="pellet_spawn" x="420" y="540" width="20" height="20"/>
+  <object id="98" name="pellet_spawn" x="420" y="520" width="20" height="20"/>
+  <object id="99" name="pellet_spawn" x="420" y="500" width="20" height="20"/>
+  <object id="100" name="pellet_spawn" x="420" y="480" width="20" height="20"/>
+  <object id="101" name="pellet_spawn" x="420" y="460" width="20" height="20"/>
+  <object id="102" name="pellet_spawn" x="420" y="440" width="20" height="20"/>
+  <object id="103" name="pellet_spawn" x="420" y="420" width="20" height="20"/>
+  <object id="104" name="pellet_spawn" x="420" y="400" width="20" height="20"/>
+  <object id="105" name="pellet_spawn" x="420" y="380" width="20" height="20"/>
+  <object id="106" name="pellet_spawn" x="420" y="360" width="20" height="20"/>
+  <object id="107" name="pellet_spawn" x="420" y="340" width="20" height="20"/>
+  <object id="108" name="pellet_spawn" x="420" y="320" width="20" height="20"/>
+  <object id="109" name="pellet_spawn" x="420" y="300" width="20" height="20"/>
+  <object id="110" name="pellet_spawn" x="420" y="280" width="20" height="20"/>
+  <object id="111" name="pellet_spawn" x="420" y="260" width="20" height="20"/>
+  <object id="112" name="pellet_spawn" x="420" y="240" width="20" height="20"/>
+  <object id="113" name="pellet_spawn" x="420" y="220" width="20" height="20"/>
+  <object id="114" name="pellet_spawn" x="420" y="200" width="20" height="20"/>
+  <object id="115" name="pellet_spawn" x="420" y="180" width="20" height="20"/>
+  <object id="116" name="pellet_spawn" x="420" y="160" width="20" height="20"/>
+  <object id="117" name="pellet_spawn" x="420" y="140" width="20" height="20"/>
+  <object id="122" name="pellet_spawn" x="420" y="120" width="20" height="20"/>
+  <object id="123" name="pellet_spawn" x="420" y="100" width="20" height="20"/>
+  <object id="124" name="pellet_spawn" x="420" y="80" width="20" height="20"/>
+  <object id="125" name="pellet_spawn" x="440" y="160" width="20" height="20"/>
+  <object id="126" name="pellet_spawn" x="440" y="160" width="20" height="20"/>
+  <object id="127" name="pellet_spawn" x="460" y="160" width="20" height="20"/>
+  <object id="128" name="pellet_spawn" x="480" y="160" width="20" height="20"/>
+  <object id="129" name="pellet_spawn" x="480" y="160" width="20" height="20"/>
+  <object id="130" name="pellet_spawn" x="500" y="160" width="20" height="20"/>
+  <object id="131" name="pellet_spawn" x="520" y="160" width="20" height="20"/>
+  <object id="132" name="pellet_spawn" x="520" y="160" width="20" height="20"/>
+  <object id="133" name="pellet_spawn" x="520" y="140" width="20" height="20"/>
+  <object id="136" name="pellet_spawn" x="520" y="100" width="20" height="20"/>
+  <object id="137" name="pellet_spawn" x="520" y="80" width="20" height="20"/>
+  <object id="138" name="pellet_spawn" x="440" y="80" width="20" height="20"/>
+  <object id="139" name="pellet_spawn" x="460" y="80" width="20" height="20"/>
+  <object id="140" name="pellet_spawn" x="480" y="80" width="20" height="20"/>
+  <object id="141" name="pellet_spawn" x="500" y="80" width="20" height="20"/>
+  <object id="142" name="pellet_spawn" x="520" y="220" width="20" height="20"/>
+  <object id="143" name="pellet_spawn" x="520" y="220" width="20" height="20"/>
+  <object id="144" name="pellet_spawn" x="520" y="200" width="20" height="20"/>
+  <object id="145" name="pellet_spawn" x="520" y="180" width="20" height="20"/>
+  <object id="146" name="pellet_spawn" x="520" y="180" width="20" height="20"/>
+  <object id="147" name="pellet_spawn" x="500" y="220" width="20" height="20"/>
+  <object id="148" name="pellet_spawn" x="480" y="220" width="20" height="20"/>
+  <object id="149" name="pellet_spawn" x="480" y="220" width="20" height="20"/>
+  <object id="150" name="pellet_spawn" x="460" y="220" width="20" height="20"/>
+  <object id="151" name="pellet_spawn" x="440" y="220" width="20" height="20"/>
+  <object id="152" name="pellet_spawn" x="440" y="460" width="20" height="20"/>
+  <object id="153" name="pellet_spawn" x="460" y="460" width="20" height="20"/>
+  <object id="154" name="pellet_spawn" x="480" y="460" width="20" height="20"/>
+  <object id="155" name="pellet_spawn" x="500" y="460" width="20" height="20"/>
+  <object id="156" name="pellet_spawn" x="520" y="460" width="20" height="20"/>
+  <object id="157" name="pellet_spawn" x="520" y="480" width="20" height="20"/>
+  <object id="158" name="pellet_spawn" x="480" y="540" width="20" height="20"/>
+  <object id="159" name="pellet_spawn" x="480" y="520" width="20" height="20"/>
+  <object id="160" name="pellet_spawn" x="480" y="500" width="20" height="20"/>
+  <object id="161" name="pellet_spawn" x="500" y="500" width="20" height="20"/>
+  <object id="163" name="pellet_spawn" x="300" y="460" width="20" height="20"/>
+  <object id="164" name="pellet_spawn" x="320" y="460" width="20" height="20"/>
+  <object id="165" name="pellet_spawn" x="340" y="460" width="20" height="20"/>
+  <object id="166" name="pellet_spawn" x="360" y="460" width="20" height="20"/>
+  <object id="167" name="pellet_spawn" x="380" y="460" width="20" height="20"/>
+  <object id="168" name="pellet_spawn" x="400" y="460" width="20" height="20"/>
+  <object id="169" name="pellet_spawn" x="300" y="480" width="20" height="20"/>
+  <object id="170" name="pellet_spawn" x="300" y="500" width="20" height="20"/>
+  <object id="171" name="pellet_spawn" x="320" y="500" width="20" height="20"/>
+  <object id="172" name="pellet_spawn" x="340" y="500" width="20" height="20"/>
+  <object id="173" name="pellet_spawn" x="360" y="500" width="20" height="20"/>
+  <object id="174" name="pellet_spawn" x="380" y="500" width="20" height="20"/>
+  <object id="175" name="pellet_spawn" x="400" y="500" width="20" height="20"/>
+  <object id="176" name="pellet_spawn" x="360" y="520" width="20" height="20"/>
+  <object id="177" name="pellet_spawn" x="360" y="540" width="20" height="20"/>
+  <object id="178" name="pellet_spawn" x="360" y="560" width="20" height="20"/>
+  <object id="179" name="pellet_spawn" x="340" y="560" width="20" height="20"/>
+  <object id="180" name="pellet_spawn" x="320" y="560" width="20" height="20"/>
+  <object id="181" name="pellet_spawn" x="300" y="560" width="20" height="20"/>
+  <object id="182" name="pellet_spawn" x="300" y="580" width="20" height="20"/>
+  <object id="183" name="pellet_spawn" x="300" y="600" width="20" height="20"/>
+  <object id="184" name="pellet_spawn" x="240" y="600" width="20" height="20"/>
+  <object id="185" name="pellet_spawn" x="240" y="580" width="20" height="20"/>
+  <object id="186" name="pellet_spawn" x="240" y="560" width="20" height="20"/>
+  <object id="187" name="pellet_spawn" x="220" y="560" width="20" height="20"/>
+  <object id="188" name="pellet_spawn" x="200" y="560" width="20" height="20"/>
+  <object id="189" name="pellet_spawn" x="180" y="560" width="20" height="20"/>
+  <object id="190" name="pellet_spawn" x="180" y="540" width="20" height="20"/>
+  <object id="191" name="pellet_spawn" x="240" y="500" width="20" height="20"/>
+  <object id="192" name="pellet_spawn" x="120" y="500" width="20" height="20"/>
+  <object id="193" name="pellet_spawn" x="140" y="500" width="20" height="20"/>
+  <object id="194" name="pellet_spawn" x="160" y="500" width="20" height="20"/>
+  <object id="195" name="pellet_spawn" x="180" y="500" width="20" height="20"/>
+  <object id="196" name="pellet_spawn" x="200" y="500" width="20" height="20"/>
+  <object id="197" name="pellet_spawn" x="220" y="500" width="20" height="20"/>
+  <object id="198" name="pellet_spawn" x="180" y="520" width="20" height="20"/>
+  <object id="199" name="pellet_spawn" x="120" y="520" width="20" height="20"/>
+  <object id="200" name="pellet_spawn" x="120" y="540" width="20" height="20"/>
+  <object id="201" name="pellet_spawn" x="120" y="560" width="20" height="20"/>
+  <object id="202" name="pellet_spawn" x="100" y="560" width="20" height="20"/>
+  <object id="203" name="pellet_spawn" x="80" y="560" width="20" height="20"/>
+  <object id="204" name="pellet_spawn" x="60" y="560" width="20" height="20"/>
+  <object id="205" name="pellet_spawn" x="40" y="560" width="20" height="20"/>
+  <object id="206" name="pellet_spawn" x="20" y="560" width="20" height="20"/>
+  <object id="207" name="pellet_spawn" x="20" y="580" width="20" height="20"/>
+  <object id="208" name="pellet_spawn" x="20" y="600" width="20" height="20"/>
+  <object id="209" name="pellet_spawn" x="120" y="480" width="20" height="20"/>
+  <object id="210" name="pellet_spawn" x="120" y="400" width="20" height="20"/>
+  <object id="211" name="pellet_spawn" x="120" y="420" width="20" height="20"/>
+  <object id="212" name="pellet_spawn" x="120" y="440" width="20" height="20"/>
+  <object id="213" name="pellet_spawn" x="120" y="460" width="20" height="20"/>
+  <object id="214" name="pellet_spawn" x="120" y="380" width="20" height="20"/>
+  <object id="215" name="pellet_spawn" x="120" y="300" width="20" height="20"/>
+  <object id="216" name="pellet_spawn" x="120" y="320" width="20" height="20"/>
+  <object id="217" name="pellet_spawn" x="120" y="340" width="20" height="20"/>
+  <object id="218" name="pellet_spawn" x="120" y="360" width="20" height="20"/>
+  <object id="219" name="pellet_spawn" x="120" y="280" width="20" height="20"/>
+  <object id="220" name="pellet_spawn" x="120" y="200" width="20" height="20"/>
+  <object id="221" name="pellet_spawn" x="120" y="220" width="20" height="20"/>
+  <object id="222" name="pellet_spawn" x="120" y="240" width="20" height="20"/>
+  <object id="223" name="pellet_spawn" x="120" y="260" width="20" height="20"/>
+  <object id="224" name="pellet_spawn" x="120" y="180" width="20" height="20"/>
+  <object id="225" name="pellet_spawn" x="120" y="140" width="20" height="20"/>
+  <object id="226" name="pellet_spawn" x="120" y="160" width="20" height="20"/>
+  <object id="227" name="pellet_spawn" x="120" y="120" width="20" height="20"/>
+  <object id="228" name="pellet_spawn" x="120" y="100" width="20" height="20"/>
+  <object id="229" name="pellet_spawn" x="120" y="100" width="20" height="20"/>
+  <object id="230" name="pellet_spawn" x="120" y="80" width="20" height="20"/>
+  <object id="231" name="pellet_spawn" x="300" y="160" width="20" height="20"/>
+  <object id="232" name="pellet_spawn" x="320" y="160" width="20" height="20"/>
+  <object id="233" name="pellet_spawn" x="320" y="160" width="20" height="20"/>
+  <object id="234" name="pellet_spawn" x="340" y="160" width="20" height="20"/>
+  <object id="235" name="pellet_spawn" x="360" y="160" width="20" height="20"/>
+  <object id="236" name="pellet_spawn" x="360" y="160" width="20" height="20"/>
+  <object id="237" name="pellet_spawn" x="380" y="160" width="20" height="20"/>
+  <object id="238" name="pellet_spawn" x="400" y="160" width="20" height="20"/>
+  <object id="239" name="pellet_spawn" x="400" y="160" width="20" height="20"/>
+  <object id="240" name="pellet_spawn" x="180" y="160" width="20" height="20"/>
+  <object id="241" name="pellet_spawn" x="200" y="160" width="20" height="20"/>
+  <object id="242" name="pellet_spawn" x="200" y="160" width="20" height="20"/>
+  <object id="243" name="pellet_spawn" x="220" y="160" width="20" height="20"/>
+  <object id="244" name="pellet_spawn" x="240" y="160" width="20" height="20"/>
+  <object id="245" name="pellet_spawn" x="240" y="160" width="20" height="20"/>
+  <object id="246" name="pellet_spawn" x="260" y="160" width="20" height="20"/>
+  <object id="247" name="pellet_spawn" x="280" y="160" width="20" height="20"/>
+  <object id="248" name="pellet_spawn" x="280" y="160" width="20" height="20"/>
+  <object id="249" name="pellet_spawn" x="140" y="160" width="20" height="20"/>
+  <object id="250" name="pellet_spawn" x="160" y="160" width="20" height="20"/>
+  <object id="251" name="pellet_spawn" x="160" y="160" width="20" height="20"/>
+  <object id="252" name="pellet_spawn" x="20" y="160" width="20" height="20"/>
+  <object id="253" name="pellet_spawn" x="80" y="160" width="20" height="20"/>
+  <object id="254" name="pellet_spawn" x="100" y="160" width="20" height="20"/>
+  <object id="255" name="pellet_spawn" x="100" y="160" width="20" height="20"/>
+  <object id="256" name="pellet_spawn" x="40" y="160" width="20" height="20"/>
+  <object id="257" name="pellet_spawn" x="60" y="160" width="20" height="20"/>
+  <object id="258" name="pellet_spawn" x="60" y="160" width="20" height="20"/>
+  <object id="259" name="pellet_spawn" x="20" y="220" width="20" height="20"/>
+  <object id="260" name="pellet_spawn" x="80" y="220" width="20" height="20"/>
+  <object id="261" name="pellet_spawn" x="100" y="220" width="20" height="20"/>
+  <object id="262" name="pellet_spawn" x="100" y="220" width="20" height="20"/>
+  <object id="263" name="pellet_spawn" x="40" y="220" width="20" height="20"/>
+  <object id="264" name="pellet_spawn" x="60" y="220" width="20" height="20"/>
+  <object id="265" name="pellet_spawn" x="60" y="220" width="20" height="20"/>
+  <object id="266" name="pellet_spawn" x="20" y="180" width="20" height="20"/>
+  <object id="267" name="pellet_spawn" x="20" y="200" width="20" height="20"/>
+  <object id="268" name="pellet_spawn" x="20" y="80" width="20" height="20"/>
+  <object id="269" name="pellet_spawn" x="20" y="140" width="20" height="20"/>
+  <object id="270" name="pellet_spawn" x="20" y="100" width="20" height="20"/>
+  <object id="272" name="pellet_spawn" x="60" y="160" width="20" height="20"/>
+  <object id="273" name="pellet_spawn" x="80" y="160" width="20" height="20"/>
+  <object id="274" name="pellet_spawn" x="80" y="160" width="20" height="20"/>
+  <object id="275" name="pellet_spawn" x="20" y="160" width="20" height="20"/>
+  <object id="276" name="pellet_spawn" x="40" y="160" width="20" height="20"/>
+  <object id="277" name="pellet_spawn" x="40" y="160" width="20" height="20"/>
+  <object id="278" name="pellet_spawn" x="80" y="80" width="20" height="20"/>
+  <object id="279" name="pellet_spawn" x="100" y="80" width="20" height="20"/>
+  <object id="280" name="pellet_spawn" x="100" y="80" width="20" height="20"/>
+  <object id="281" name="pellet_spawn" x="40" y="80" width="20" height="20"/>
+  <object id="282" name="pellet_spawn" x="60" y="80" width="20" height="20"/>
+  <object id="283" name="pellet_spawn" x="60" y="80" width="20" height="20"/>
+  <object id="284" name="pellet_spawn" x="60" y="80" width="20" height="20"/>
+  <object id="285" name="pellet_spawn" x="80" y="80" width="20" height="20"/>
+  <object id="286" name="pellet_spawn" x="80" y="80" width="20" height="20"/>
+  <object id="287" name="pellet_spawn" x="40" y="80" width="20" height="20"/>
+  <object id="288" name="pellet_spawn" x="40" y="80" width="20" height="20"/>
+  <object id="289" name="pellet_spawn" x="240" y="80" width="20" height="20"/>
+  <object id="290" name="pellet_spawn" x="140" y="80" width="20" height="20"/>
+  <object id="291" name="pellet_spawn" x="200" y="80" width="20" height="20"/>
+  <object id="292" name="pellet_spawn" x="220" y="80" width="20" height="20"/>
+  <object id="293" name="pellet_spawn" x="220" y="80" width="20" height="20"/>
+  <object id="294" name="pellet_spawn" x="160" y="80" width="20" height="20"/>
+  <object id="295" name="pellet_spawn" x="180" y="80" width="20" height="20"/>
+  <object id="296" name="pellet_spawn" x="180" y="80" width="20" height="20"/>
+  <object id="297" name="pellet_spawn" x="180" y="80" width="20" height="20"/>
+  <object id="298" name="pellet_spawn" x="200" y="80" width="20" height="20"/>
+  <object id="299" name="pellet_spawn" x="200" y="80" width="20" height="20"/>
+  <object id="300" name="pellet_spawn" x="160" y="80" width="20" height="20"/>
+  <object id="301" name="pellet_spawn" x="160" y="80" width="20" height="20"/>
+  <object id="302" name="pellet_spawn" x="120" y="180" width="20" height="20"/>
+  <object id="303" name="pellet_spawn" x="120" y="200" width="20" height="20"/>
+  <object id="304" name="pellet_spawn" x="120" y="160" width="20" height="20"/>
+  <object id="305" name="pellet_spawn" x="120" y="140" width="20" height="20"/>
+  <object id="306" name="pellet_spawn" x="120" y="140" width="20" height="20"/>
+  <object id="307" name="pellet_spawn" x="120" y="120" width="20" height="20"/>
+  <object id="308" name="pellet_spawn" x="240" y="100" width="20" height="20"/>
+  <object id="309" name="pellet_spawn" x="240" y="120" width="20" height="20"/>
+  <object id="310" name="pellet_spawn" x="240" y="140" width="20" height="20"/>
+  <object id="311" name="pellet_spawn" x="300" y="80" width="20" height="20"/>
+  <object id="312" name="pellet_spawn" x="400" y="80" width="20" height="20"/>
+  <object id="313" name="pellet_spawn" x="320" y="80" width="20" height="20"/>
+  <object id="314" name="pellet_spawn" x="340" y="80" width="20" height="20"/>
+  <object id="315" name="pellet_spawn" x="360" y="80" width="20" height="20"/>
+  <object id="316" name="pellet_spawn" x="380" y="80" width="20" height="20"/>
+  <object id="317" name="pellet_spawn" x="300" y="140" width="20" height="20"/>
+  <object id="318" name="pellet_spawn" x="300" y="120" width="20" height="20"/>
+  <object id="319" name="pellet_spawn" x="300" y="100" width="20" height="20"/>
+  <object id="320" name="pellet_spawn" x="140" y="460" width="20" height="20"/>
+  <object id="321" name="pellet_spawn" x="160" y="460" width="20" height="20"/>
+  <object id="322" name="pellet_spawn" x="180" y="460" width="20" height="20"/>
+  <object id="323" name="pellet_spawn" x="200" y="460" width="20" height="20"/>
+  <object id="324" name="pellet_spawn" x="220" y="460" width="20" height="20"/>
+  <object id="325" name="pellet_spawn" x="240" y="460" width="20" height="20"/>
+  <object id="326" name="pellet_spawn" x="240" y="480" width="20" height="20"/>
+  <object id="327" name="pellet_spawn" x="420" y="180" width="20" height="20"/>
+  <object id="328" name="pellet_spawn" x="420" y="160" width="20" height="20"/>
+  <object id="329" name="pellet_spawn" x="420" y="140" width="20" height="20"/>
+  <object id="330" name="pellet_spawn" x="420" y="120" width="20" height="20"/>
+  <object id="331" name="pellet_spawn" x="360" y="220" width="20" height="20"/>
+  <object id="332" name="pellet_spawn" x="360" y="200" width="20" height="20"/>
+  <object id="333" name="pellet_spawn" x="360" y="180" width="20" height="20"/>
+  <object id="334" name="pellet_spawn" x="360" y="220" width="20" height="20"/>
+  <object id="335" name="pellet_spawn" x="340" y="220" width="20" height="20"/>
+  <object id="336" name="pellet_spawn" x="340" y="220" width="20" height="20"/>
+  <object id="337" name="pellet_spawn" x="320" y="220" width="20" height="20"/>
+  <object id="338" name="pellet_spawn" x="320" y="220" width="20" height="20"/>
+  <object id="339" name="pellet_spawn" x="300" y="220" width="20" height="20"/>
+  <object id="340" name="pellet_spawn" x="300" y="220" width="20" height="20"/>
+  <object id="341" name="pellet_spawn" x="240" y="220" width="20" height="20"/>
+  <object id="342" name="pellet_spawn" x="240" y="220" width="20" height="20"/>
+  <object id="343" name="pellet_spawn" x="220" y="220" width="20" height="20"/>
+  <object id="344" name="pellet_spawn" x="220" y="220" width="20" height="20"/>
+  <object id="345" name="pellet_spawn" x="200" y="220" width="20" height="20"/>
+  <object id="346" name="pellet_spawn" x="200" y="220" width="20" height="20"/>
+  <object id="347" name="pellet_spawn" x="180" y="220" width="20" height="20"/>
+  <object id="348" name="pellet_spawn" x="180" y="220" width="20" height="20"/>
+  <object id="349" name="pellet_spawn" x="180" y="180" width="20" height="20"/>
+  <object id="350" name="pellet_spawn" x="180" y="200" width="20" height="20"/>
+  <object id="351" name="pellet_spawn" x="60" y="540" width="20" height="20"/>
+  <object id="352" name="pellet_spawn" x="60" y="520" width="20" height="20"/>
+  <object id="353" name="pellet_spawn" x="60" y="500" width="20" height="20"/>
+  <object id="354" name="pellet_spawn" x="40" y="500" width="20" height="20"/>
+  <object id="356" name="pellet_spawn" x="40" y="460" width="20" height="20"/>
+  <object id="357" name="pellet_spawn" x="60" y="460" width="20" height="20"/>
+  <object id="358" name="pellet_spawn" x="80" y="460" width="20" height="20"/>
+  <object id="359" name="pellet_spawn" x="100" y="460" width="20" height="20"/>
+  <object id="360" name="pellet_spawn" x="20" y="460" width="20" height="20"/>
+  <object id="361" name="pellet_spawn" x="20" y="480" width="20" height="20"/>
+  <object id="369" name="bonus_spawn" x="270" y="400" width="20" height="20"/>
+ </objectgroup>
+ <objectgroup id="11" name="power_pellets" visible="0">
+  <object id="271" name="power_pellet_spawn" x="20" y="120" width="20" height="20"/>
+  <object id="362" name="power_pellet_spawn" x="20" y="500" width="20" height="20"/>
+  <object id="363" name="power_pellet_spawn" x="520" y="500" width="20" height="20"/>
+  <object id="364" name="power_pellet_spawn" x="520" y="120" width="20" height="20"/>
+ </objectgroup>
+ <objectgroup id="9" name="player_and_ghosts">
+  <object id="45" name="player_spawn" x="270" y="500" width="20" height="20"/>
+  <object id="46" name="blinky_spawn" x="200" y="280" width="20" height="20"/>
+  <object id="47" name="pinky_spawn" x="340" y="280" width="20" height="20"/>
+  <object id="48" name="inky_spawn" x="260" y="280" width="20" height="20"/>
+  <object id="49" name="clyde_spawn" x="280" y="280" width="20" height="20"/>
+ </objectgroup>
+ <objectgroup id="10" name="misc" visible="0">
+  <object id="51" name="no_up" x="300" y="500" width="20" height="20"/>
+  <object id="52" name="no_up" x="240" y="500" width="20" height="20"/>
+  <object id="365" name="no_up" x="240" y="280" width="20" height="20"/>
+  <object id="366" name="no_up" x="300" y="280" width="20" height="20"/>
+ </objectgroup>
+</map>

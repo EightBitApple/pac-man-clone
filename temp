@@ -1,0 +1,75 @@
+CLASS Game
+    METHOD CONSTRUCTOR()
+        pygame.init()
+        PUBLIC screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        pygame.display.set_caption("PAC-MAN")
+
+        clock = pygame.time.Clock()
+        PUBLIC running = True
+        PUBLIC playing = False
+        PUBLIC time_delta = 0
+
+        // define file paths
+
+        CALL load_data()
+
+    METHOD load_data()
+        // load high score
+        // load graphics
+
+        all_sprites = pygame.sprite.Group()
+        PUBLIC walls = pygame.sprite.Group()
+        PUBLIC pellets = pygame.sprite.Group()
+        PUBLIC ghosts = pygame.sprite.Group()
+        PUBLIC fruits = pygame.sprite.Group()
+
+        // iterate through map file and instantiate objects
+
+        CALL game_loop()
+
+    METHOD game_loop()
+        WHILE playing == True
+            time_delta = clock.tick(FPS) / 1000
+            CALL get_events()
+            all_sprites.update()
+            CALL draw()
+
+        END WHILE
+
+    METHOD get_events()
+        FOR event IN pg.event.get()
+            IF event.type == pg.QUIT
+                playing = False
+                running = False
+            END IF
+
+    METHOD draw()
+        screen.fill(BLACK)
+        all_sprites.draw(screen)
+
+        // draw HUD elements
+
+    METHOD show_title_screen()
+        // draw the title screen and wait for enter key to be pressed
+
+    METHOD show_post_game_screen()
+        IF running
+            RETURN
+        END IF
+
+        // draw the screen with either "LEVEL CLEAR" or "GAME OVER" 
+        // and wait for enter key to be pressed
+
+PROCEDURE main()
+    game = NEW Game()
+    game.show_title_screen()
+
+    WHILE game.running == True
+        game.load_data()
+        // when game loop breaks
+        game.show_post_game_screen()
+    END WHILE
+
+    pygame.quit()
+    quit()
+END PROCEDURE
