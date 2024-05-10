@@ -1,32 +1,27 @@
 #+title: Pac-Man Clone using Python and Pygame
 
-This is the source code for a programming project that I submitted as my
-Computing coursework back in 2021.  I did not use any version control, so all
-the code got added as an initial commit. I am not going to do much with this in
-the future, its mainly here for historical purposes, and as part of a portfolio.
+This is the source code for a programming project that I submitted as my Computing coursework back in 2021.
+I did not use any version control, so all the code got added as an initial commit.
+I am not going to do much with this in the future, It's mainly here for historical purposes, and to be part of a portfolio.
 
 * Features
-+ Title screen displaying the game's rules.
++ A title screen that displays the game's rules.
 + Pausing.
-+ High Score system with encrypted high scores.
-+ Frame-rate independent movement and logic (using frametime delta).
-+ Intuitive and accessable controls:
++ High Score system with an encrypted high score.
++ Frame rate independent movement and logic (using frame time delta).
++ Intuitive and accessible controls:
   + You don't need to hold keys to keep Pac-Man moving.
-  + The game will buffer directional inputs until its possible to move in that direction.
+  + The game will buffer directional inputs until its possible to move in that
+    direction.
 + Risk vs reward Gameplay. Eat a power pellet and eat the frightened ghosts in
   quick succession to multiply your score!
 
 + Accurate ghost behaviour:
-  + Like the arcade version, each ghost complements one another with their
-    unique strategy to chase Pac-Man which, along with the loop-heavy maze
-    layout, gives the impression of teamwork.
-  + The algorithm they use to pathfind their way to the target and when to
-    chase or scatter is a close approximation to the arcade version. [[https://youtu.be/ataGotQ7ir8][This
-    video from Retro Game Mechanics Explained]] was the guide to implement the
-    behaviours.
+  + Like the arcade version, each ghost complements one another with their unique strategy to catch Pac-Man, which - along with the loop-heavy maze layout - gives the impression of teamwork.
+  + The algorithm they use for pathfinding their way to the target and when to chase or scatter is a close approximation to the arcade version. [[https://youtu.be/ataGotQ7ir8][This video from Retro Game Mechanics Explained]] was the guide to implement these behaviours.
 
 * Running the Game
-The game requires the following dependicies:
+The game requires the following dependencies:
 + ~python 3.12~
 
 + Python packages:
@@ -34,11 +29,10 @@ The game requires the following dependicies:
   + ~pytmx 3.3.1~
   + ~cryptography 42.0.5~
 
-I ran the program using the latest versions of these dependicies from nixpkgs'
-stable branch and the program runs fine.
+I ran the program using the latest versions of these dependencies from nixpkgs' stable branch and the program runs fine.
 
 * Agenda
-** TODO Make a developer environment using a Nix Shell, with dependicies installed.
+** TODO Make a developer environment using a Nix Shell, with dependencies installed.
 *** TODO Make a developer environment using a Nix Shell in a Flake.
 ** TODO Use Nix Flakes to generate a Docker image.
 
