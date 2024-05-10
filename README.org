@@ -27,12 +27,12 @@ the future, its mainly here for historical purposes, and as part of a portfolio.
 
 * Running the Game
 The game requires the following dependicies:
-+ ~~python 3.12~~
++ ~python 3.12~
 
 + Python packages:
-  + ~~pygame 2.5.2~~
-  + ~~pytmx 3.3.1~~
-  + ~~cryptography 42.0.5~~
+  + ~pygame 2.5.2~
+  + ~pytmx 3.3.1~
+  + ~cryptography 42.0.5~
 
 I ran the program using the latest versions of these dependicies from nixpkgs'
 stable branch and the program runs fine.
