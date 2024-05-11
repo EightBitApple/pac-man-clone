@@ -11,10 +11,8 @@ I am not going to do much with this in the future, It's mainly here for historic
 + Frame rate independent movement and logic (using frame time delta).
 + Intuitive and accessible controls:
   + You don't need to hold keys to keep Pac-Man moving.
-  + The game will buffer directional inputs until its possible to move in that
-    direction.
-+ Risk vs reward Gameplay. Eat a power pellet and eat the frightened ghosts in
-  quick succession to multiply your score!
+  + The game will buffer directional inputs until its possible to move in that direction.
++ Risk vs reward Gameplay. Eat a power pellet and eat the frightened ghosts in quick succession to multiply your score!
 
 + Accurate ghost behaviour:
   + Like the arcade version, each ghost complements one another with their unique strategy to catch Pac-Man, which - along with the loop-heavy maze layout - gives the impression of teamwork.
