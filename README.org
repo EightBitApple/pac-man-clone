@@ -29,13 +29,3 @@ The game requires the following dependencies:
 
 I ran the program using the latest versions of these dependencies from nixpkgs' stable branch and the program runs fine.
 
-* Agenda
-** TODO Make a developer environment using a Nix Shell, with dependencies installed.
-*** TODO Make a developer environment using a Nix Shell in a Flake.
-** TODO Use Nix Flakes to generate a Docker image.
-
-* TODO Add documentation into repo.
-** TODO Port documentation from odt to pdf.
-
-* TODO Fix or remove the high score encryption.
-* TODO Organise the source tree.

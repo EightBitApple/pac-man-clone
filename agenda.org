@@ -1,0 +1,9 @@
+#+title: Agenda
+
+Things to do in no particular order.
+* TODO Use Nix Flakes to make a developer environment in a Nix Shell with dependencies installed.
+* TODO Use Nix Flakes to generate a Docker image.
+* TODO Port documentation from ODT to PDF.
+* TODO Fix or remove the high score encryption.
+* TODO Organise the source tree.
+* TODO Fix bugs related to Blinky's endgame behaviour.
