@@ -1,0 +1,15 @@
+#+title: Computer Science H446 Coursework Project: Pac-Man Game
+
+#+author: Stefan Harris
+#+subtitle: Candidate Number: 1419
+#+subtitle: Centre Number: 19268
+
+#+date:
+
+#+SETUPFILE: jake-latex-standard.setup
+
+#+INCLUDE: ./analysis.org
+#+INCLUDE: ./design.org
+#+INCLUDE: ./development.org
+#+INCLUDE: ./testing.org
+#+INCLUDE: ./evaluation.org
