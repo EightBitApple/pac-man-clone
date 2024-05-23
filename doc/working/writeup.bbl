@@ -1,0 +1,277 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{kidsCanCodeLessions}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f0280ee83314069341fb05e410948e67}{%
+           family={Bradfield},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {KidsCanCode}%
+      }
+      \strng{namehash}{f0280ee83314069341fb05e410948e67}
+      \strng{fullhash}{f0280ee83314069341fb05e410948e67}
+      \strng{bibnamehash}{f0280ee83314069341fb05e410948e67}
+      \strng{authorbibnamehash}{f0280ee83314069341fb05e410948e67}
+      \strng{authornamehash}{f0280ee83314069341fb05e410948e67}
+      \strng{authorfullhash}{f0280ee83314069341fb05e410948e67}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Python Lessons and Tutorials}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://kidscancode.org/lessons/
+      \endverb
+      \verb{url}
+      \verb https://kidscancode.org/lessons/
+      \endverb
+    \endentry
+    \entry{kidsCanCodeTileBasedGameP2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f0280ee83314069341fb05e410948e67}{%
+           family={Bradfield},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {KidsCanCode}%
+      }
+      \strng{namehash}{f0280ee83314069341fb05e410948e67}
+      \strng{fullhash}{f0280ee83314069341fb05e410948e67}
+      \strng{bibnamehash}{f0280ee83314069341fb05e410948e67}
+      \strng{authorbibnamehash}{f0280ee83314069341fb05e410948e67}
+      \strng{authornamehash}{f0280ee83314069341fb05e410948e67}
+      \strng{authorfullhash}{f0280ee83314069341fb05e410948e67}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tile-based game Part 2: Collisions and Tilemap}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=ajR4BZBKTr4
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=ajR4BZBKTr4
+      \endverb
+    \endentry
+    \entry{20x20Tileset}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9e5c68b8255d111e79e1cbc3617376e8}{%
+           family={drakzlin},
+           familyi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e5c68b8255d111e79e1cbc3617376e8}
+      \strng{fullhash}{9e5c68b8255d111e79e1cbc3617376e8}
+      \strng{bibnamehash}{9e5c68b8255d111e79e1cbc3617376e8}
+      \strng{authorbibnamehash}{9e5c68b8255d111e79e1cbc3617376e8}
+      \strng{authornamehash}{9e5c68b8255d111e79e1cbc3617376e8}
+      \strng{authorfullhash}{9e5c68b8255d111e79e1cbc3617376e8}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{20x20 Tileset}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opengameart.org/content/20x20-tileset
+      \endverb
+      \verb{url}
+      \verb https://opengameart.org/content/20x20-tileset
+      \endverb
+    \endentry
+    \entry{gamesAtAGlance}{online}{}
+      \name{author}{1}{}{%
+        {{hash=08f61ab1aaf9da6ba63f780f5add5ccf}{%
+           family={Gage},
+           familyi={G\bibinitperiod},
+           given={Zach},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {GDC}%
+      }
+      \strng{namehash}{08f61ab1aaf9da6ba63f780f5add5ccf}
+      \strng{fullhash}{08f61ab1aaf9da6ba63f780f5add5ccf}
+      \strng{bibnamehash}{08f61ab1aaf9da6ba63f780f5add5ccf}
+      \strng{authorbibnamehash}{08f61ab1aaf9da6ba63f780f5add5ccf}
+      \strng{authornamehash}{08f61ab1aaf9da6ba63f780f5add5ccf}
+      \strng{authorfullhash}{08f61ab1aaf9da6ba63f780f5add5ccf}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Building games that can be understood at a glance}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://stfj.net/DesigningForSubwayLegibility/
+      \endverb
+      \verb{url}
+      \verb https://stfj.net/DesigningForSubwayLegibility/
+      \endverb
+    \endentry
+    \entry{pacmanDoodle}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={{Google}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pacman Doodle}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.google.com/logos/2010/pacman10-i.html
+      \endverb
+      \verb{url}
+      \verb https://www.google.com/logos/2010/pacman10-i.html
+      \endverb
+    \endentry
+    \entry{pygameAbout}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c16872077957a36f9149cb183a10f101}{%
+           family={{Pygame}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c16872077957a36f9149cb183a10f101}
+      \strng{fullhash}{c16872077957a36f9149cb183a10f101}
+      \strng{bibnamehash}{c16872077957a36f9149cb183a10f101}
+      \strng{authorbibnamehash}{c16872077957a36f9149cb183a10f101}
+      \strng{authornamehash}{c16872077957a36f9149cb183a10f101}
+      \strng{authorfullhash}{c16872077957a36f9149cb183a10f101}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About - Wiki}
+      \field{urlday}{25}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pygame.org/wiki/about
+      \endverb
+      \verb{url}
+      \verb https://www.pygame.org/wiki/about
+      \endverb
+    \endentry
+    \entry{stackoverflowSmoothTileMovement}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c50091fb81bbab7dc3a22ed7acc50dd2}{%
+           family={{Rabbid76}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Stack Overflow}%
+      }
+      \strng{namehash}{c50091fb81bbab7dc3a22ed7acc50dd2}
+      \strng{fullhash}{c50091fb81bbab7dc3a22ed7acc50dd2}
+      \strng{bibnamehash}{c50091fb81bbab7dc3a22ed7acc50dd2}
+      \strng{authorbibnamehash}{c50091fb81bbab7dc3a22ed7acc50dd2}
+      \strng{authornamehash}{c50091fb81bbab7dc3a22ed7acc50dd2}
+      \strng{authorfullhash}{c50091fb81bbab7dc3a22ed7acc50dd2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How do I move the player smoothly in a tile based game?}
+      \field{urlday}{25}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://kidscancode.org/lessons/
+      \endverb
+      \verb{url}
+      \verb https://kidscancode.org/lessons/
+      \endverb
+    \endentry
+    \entry{SDLIntro}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a203d5f2c811f85341bed32623f5bdf6}{%
+           family={{SDL}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a203d5f2c811f85341bed32623f5bdf6}
+      \strng{fullhash}{a203d5f2c811f85341bed32623f5bdf6}
+      \strng{bibnamehash}{a203d5f2c811f85341bed32623f5bdf6}
+      \strng{authorbibnamehash}{a203d5f2c811f85341bed32623f5bdf6}
+      \strng{authornamehash}{a203d5f2c811f85341bed32623f5bdf6}
+      \strng{authorfullhash}{a203d5f2c811f85341bed32623f5bdf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to SDL 2.0}
+      \field{urlday}{25}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.libsdl.org/Introduction
+      \endverb
+      \verb{url}
+      \verb https://wiki.libsdl.org/Introduction
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

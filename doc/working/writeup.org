@@ -8,8 +8,21 @@
 
 #+SETUPFILE: jake-latex-standard.setup
 
+#+CITE_EXPORT: biblatex
+#+BIBLIOGRAPHY: bib/sources.bib
+
 #+INCLUDE: ./analysis.org
 #+INCLUDE: ./design.org
 #+INCLUDE: ./development.org
 #+INCLUDE: ./testing.org
 #+INCLUDE: ./evaluation.org
+
+#+print_bibliography:
+[cite:@pygameAbout]
+[cite:@SDLIntro]
+[cite:@kidsCanCodeLessions]
+[cite:@stackoverflowSmoothTileMovement]
+[cite:@gamesAtAGlance]
+[cite:@pacmanDoodle]
+[cite:@20x20Tileset]
+[cite:@kidsCanCodeTileBasedGameP2]

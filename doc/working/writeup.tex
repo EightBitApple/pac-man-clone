@@ -1,10 +1,7 @@
-% Created 2024-05-16 Thu 14:41
+% Created 2024-05-16 Thu 21:07
 % Intended LaTeX compiler: pdflatex
 \documentclass[letterpaper, 11pt]{article}
-                      \usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhead[L]{Stefan Harris}
-\usepackage{lmodern} % Ensures we have the right font
+                      \usepackage{lmodern} % Ensures we have the right font
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -48,10 +45,20 @@
  pdfsubject={},
  pdfcreator={Emacs 29.3 (Org mode 9.6.24)}, 
  pdflang={English}}
+\usepackage{biblatex}
+\addbibresource{/home/stefan/documents/pac-man/pac-final-final/doc/working/bib/sources.bib}
 \begin{document}
 
 \maketitle
 \tableofcontents
 
-
+\printbibliography
+\autocite{pygameAbout}
+\autocite{SDLIntro}
+\autocite{kidsCanCodeLessions}
+\autocite{stackoverflowSmoothTileMovement}
+\autocite{gamesAtAGlance}
+\autocite{pacmanDoodle}
+\autocite{20x20Tileset}
+\autocite{kidsCanCodeTileBasedGameP2}
 \end{document}
