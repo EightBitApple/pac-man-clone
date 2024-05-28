@@ -12,11 +12,17 @@
     "kidsCanCodeTileBasedGameP2"
     "fileEncryptAndDecrypt"
     "kidsCanCodePlatformerP7Github"
-    "kidsCanCodePlatformerP7Vidro"
+    "kidsCanCodePlatformerP7Video"
     "pythonTutorialPrivateAttributes"
     "stackExchangeCollisionBox"
     "kidsCanCodePlatformerP18Github"
     "tiledLevelEditor"
-    "pyTMX"))
+    "pyTMX"
+    "kidsCanCodeTiledBasedGameP11Video"
+    "kidsCanCodeTiledBasedGameP12Video"
+    "kidsCanCodeTiledBasedGameP13Video"
+    "stackoverflowChangingSpriteColors"
+    "stackoverflowTransparentRectangle"
+    "RetroGameMechanicsExplained"))
  '(or :bibtex :latex))
 
