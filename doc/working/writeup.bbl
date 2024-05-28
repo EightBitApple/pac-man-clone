@@ -16,5 +16,39 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{RetroGameMechanicsExplained}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f5ca6b9dabf6e668bef5cad4b9bc77af}{%
+           family={{Retro Game Mechanics Explained}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5ca6b9dabf6e668bef5cad4b9bc77af}
+      \strng{fullhash}{f5ca6b9dabf6e668bef5cad4b9bc77af}
+      \strng{bibnamehash}{f5ca6b9dabf6e668bef5cad4b9bc77af}
+      \strng{authorbibnamehash}{f5ca6b9dabf6e668bef5cad4b9bc77af}
+      \strng{authornamehash}{f5ca6b9dabf6e668bef5cad4b9bc77af}
+      \strng{authorfullhash}{f5ca6b9dabf6e668bef5cad4b9bc77af}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pac-Man Ghost AI Explained}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=ataGotQ7ir8
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=ataGotQ7ir8
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

@@ -9,7 +9,6 @@
 #+SETUPFILE: jake-latex-standard.setup
 
 #+CITE_EXPORT: biblatex
-#+BIBLIOGRAPHY: bib/sources.bib
 
 #+INCLUDE: ./introduction.org
 #+INCLUDE: ./analysis.org
