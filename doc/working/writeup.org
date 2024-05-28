@@ -11,6 +11,7 @@
 #+CITE_EXPORT: biblatex
 #+BIBLIOGRAPHY: bib/sources.bib
 
+#+INCLUDE: ./introduction.org
 #+INCLUDE: ./analysis.org
 #+INCLUDE: ./design.org
 #+INCLUDE: ./development.org
@@ -18,25 +19,3 @@
 #+INCLUDE: ./evaluation.org
 
 #+print_bibliography:
-[cite:@pygameAbout]
-[cite:@SDLIntro]
-[cite:@kidsCanCodeLessions]
-[cite:@stackoverflowSmoothTileMovement]
-[cite:@gamesAtAGlance]
-[cite:@pacmanDoodle]
-[cite:@20x20Tileset]
-[cite:@kidsCanCodeTileBasedGameP2]
-[cite:@fileEncryptAndDecrypt]
-[cite:@kidsCanCodePlatformerP7Github]
-[cite:@kidsCanCodePlatformerP7Video]
-[cite:@pythonTutorialPrivateAttributes]
-[cite:@stackExchangeCollisionBox]
-[cite:@kidsCanCodePlatformerP18Github]
-[cite:@tiledLevelEditor]
-[cite:@pyTMX]
-[cite:@kidsCanCodeTiledBasedGameP11Video]
-[cite:@kidsCanCodeTiledBasedGameP12Video]
-[cite:@kidsCanCodeTiledBasedGameP13Video]
-[cite:@stackoverflowChangingSpriteColors]
-[cite:@stackoverflowTransparentRectangle]
-[cite:@RetroGameMechanicsExplained]

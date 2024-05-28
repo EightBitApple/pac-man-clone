@@ -1,0 +1,5 @@
+* Introduction
+This project aims to develop a program serving as a recreation of the 1980 coin-op arcade game Pac-Man, using both the household high-level programming language Python and a 3rd party library to enable game development, Pygame.
+The project aims at creating a rather conservative recreation of the original.
+The core gameplay loop will be retained as much as possible by researching the original game’s mechanics, namely the mechanics of the ghosts: the algorithms that dictate where they will move, where they will move to and how to react to key game play moments.
+Any features outside gameplay will be mostly cosmetic and or serves as a quality-of-life improvement for the player.
