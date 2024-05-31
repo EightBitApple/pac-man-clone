@@ -133,8 +133,7 @@ These stakeholders include:
    They may be a fan of Pac-Man, looking for a simple way of playing a recreation of Pac-Man without having to toy with emulation or other methods.
    Akin to the children, some adults may not be versed with technology, so they may seek a simple way of playing Pac-Man, which this solution will serve.
    The simple controls and arcade-centric design allows adults to use the game to get some entertainment during their free time.
-   While the simplicity of the game can be appealing for young children, it can become boring for adults, they may ask for variety seen in other realises, like multiple maze layouts.
-    #latercrossref
+   While the simplicity of the game can be appealing for young children, it can become boring for adults, they may ask for variety [[Ms. Pac-Man][seen in other releases, like multiple maze layouts]].
   Again, I want to focus on implementing the core gameplay, with extra features being added if I have enough time.
 
 + *Programmers* – Likely hobbyists that have an interest in how retro games work.
@@ -202,6 +201,7 @@ This is obviously a bug, therefore I won’t replicate it in my solution.
 [[./img/analysis/retro-game-mech/pinky-bug.jpg]]
 
 ** Ms. Pac-Man
+<<Ms. Pac-Man>>
 Released in 1982 by publisher Midway, Ms Pac-Man is the questionably licensed sequel to Namco’s original arcade release.
 
 #+CAPTION: Start of a game of Ms. Pac-Man. Note how the walls are now solid pink and that they’re now two sets of warp tunnels.
@@ -233,7 +233,7 @@ The gameplay does not stray far away from the original, instead it adds new qual
 ** Pac-Man Championship Edition (CE)
 #+CAPTION: Pac-Man CE midgame.
 #+NAME: fig:pacman-cs-midgame
-#+ATTR_LATEX: :width 0.33\linewidth
+#+ATTR_LATEX: :width 0.50\linewidth
 [[./img/analysis/champ/midgame.jpg]]
 
 Originally released in 2007, Pac-Man CE is of now the last game that series creator Toru Iwatani has worked on.
@@ -253,7 +253,7 @@ When distilled, gameplay follows the same timeless loop as the original, but wit
 
 #+CAPTION: The player eating a trail of ghosts behind them.
 #+NAME: fig:pacman-eating
-#+ATTR_LATEX: :width 0.33\linewidth
+#+ATTR_LATEX: :width 0.50\linewidth
 [[./img/analysis/champ/eating.jpg]]
 
 + Assistive effects are also added.
@@ -262,3 +262,25 @@ When distilled, gameplay follows the same timeless loop as the original, but wit
   I understand the need for slow motion since this game is significantly faster-paced, I felt like the tension of a ghost almost catching you from behind, only to narrowly escape them by turning a corner is reduced.
   I feel like this and the bombs do not gel well with the slower pace of the original.
   Though some of my stakeholders likely the children - may want these assistive effects, so I could add them as an option to enable if I have time.
+
+** Pac-Mania
+#+CAPTION: Pac-Mania mid level.
+#+NAME: fig:mania-mid
+#+ATTR_LATEX: :width 0.33\linewidth
+[[./img/analysis/mania/midgame.jpg]]
+
+Released in 1987 for arcades, Pac-Mania is an isometric representation of the original, with some major additions:
+
++ Pac-Man can now jump over ghosts to serve as another option to evade them.
+  This adds a tactical ripple to the gameplay.
+  This makes more sense in an isometric perspective compared to a top-down one.
+  While still possible top-down with some dynamic sprite scaling it seems like too much effort to implement into the solution for what it is worth.
+
++ To balance out the jump, two new ghosts are added.
+  Funky and Splunky.
+  Both can jump and Pac-Man cannot jump over Splunky.
+  Like the jumping mechanic, it seems like this would require a lot of attention to implement properly, which would detract from the quality of the core parts of the solution.
+  The extra ghosts may also cramp up the small maze and confuse the player.
+
++ Eating bonus fruit will speed up Pac-Man, serving as a power-up in distancing him from the ghosts, but also a power-down since it makes it harder to navigate the maze.
+  This seems like a nice twist to gameplay, but I will need to see whether this will play nice in the smaller maze of the original.
