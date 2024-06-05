@@ -1,4 +1,4 @@
-% Created 2024-05-31 Fri 14:55
+% Created 2024-05-31 Fri 15:26
 % Intended LaTeX compiler: pdflatex
 \documentclass[letterpaper, 11pt]{article}
                       \usepackage{lmodern} % Ensures we have the right font
@@ -34,6 +34,7 @@
 \titlespacing\subsubsection{0pt}{5pt}{-2pt} % left margin, space before subsection header, space after subsection header
 \usepackage{enumitem}
 \setlist{itemsep=-2pt} % or \setlist{noitemsep} to leave space around whole list
+\usepackage{tabularx}
 \author{Stefan Harris}
 \date{}
 \title{Computer Science H446 Coursework Project: Pac-Man Game\\\medskip
@@ -54,15 +55,15 @@
 
 
 \section{Introduction}
-\label{sec:org53acd36}
+\label{sec:org01a1196}
 This project aims to develop a program serving as a recreation of the 1980 coin-op arcade game Pac-Man, using both the household high-level programming language Python and a 3rd party library to enable game development, Pygame.
 The project aims at creating a rather conservative recreation of the original.
 The core gameplay loop will be retained as much as possible by researching the original game’s mechanics, namely the mechanics of the ghosts: the algorithms that dictate where they will move, where they will move to and how to react to key game play moments.
 Any features outside gameplay will be mostly cosmetic and or serves as a quality-of-life improvement for the player.
 \section{Analysis}
-\label{sec:org6374646}
+\label{sec:org4d54335}
 \subsection{Identifying the Problem (An Explanation of Pac-Man)}
-\label{sec:orgd6db11b}
+\label{sec:orga1e2292}
 Pac-Man is a 1980 arcade game developed and published by Bandai Namco in Japan.
 And published by Midway Games in North America.
 Despite initially receiving lukewarm reception in Japan, the game showed both critical and commercial success outside the nation and the franchise remains one of the highest-grossing video game series of all time.
@@ -87,12 +88,12 @@ They also alternate between behaviour states during a level, namely chase mode �
 \end{figure}
 
 \subsection{Solving the Problem using Computational Methods}
-\label{sec:org3e8cb7f}
+\label{sec:org277d725}
 \label{Solving the Problem using Computational Methods}
 One of the reasons I chose Pac-Man for my coursework is because I believe it serves as a good example on how computational methods can be applied to a large project to make it more approachable.
 
 \subsubsection{Abstraction}
-\label{sec:org62db6c3}
+\label{sec:org6767b8f}
 Abstraction helps in reducing the amount of hardware resources taken up by the program, ensuring that performance is optimal on the range of target systems.
 An abstract model will serve as a representation of reality, only functioning in the ways it needs to.
 
@@ -112,7 +113,7 @@ The entities can only move in cardinal directions.
 With the source material already being abstracted, it is easy to find and implement the core mechanics into my project such as the player movement, ghost behaviour and ghost states while ignoring more superfluous aspects like cut-scenes between levels.
 
 \subsubsection{Decomposition}
-\label{sec:org5faf4c3}
+\label{sec:orgd1852d4}
 For complex problems like this, decomposition is invaluable for breaking it down into simpler, more manageable chunks that can be prioritised, developed, and tested individually.
 It makes life so much easier on the developer’s end.
 
@@ -125,7 +126,7 @@ For ghosts, it is their movement algorithm and behaviour states.
 Once the game is fully decomposed, the components can then be prioritised, such as the maze being implemented before the gameplay since the maze will house all the gameplay.
 
 \subsubsection{Logic, Branching and Iteration}
-\label{sec:org81c46c9}
+\label{sec:orgfccf959}
 These are pivotal for adding interactivity and dynamism to the solution.
 Without these the code is completely linear and with little to no meaningful interactivity, which is not optimal for a game, a program that is supposed to react to user input.
 
@@ -143,7 +144,7 @@ A main game loop will be used to clear the screen, update the entities, and refr
 Iteration will also be used in entity behaviour; the ghosts will iterate through each cardinal direction to decide what direction to move in.
 
 \subsubsection{Pipelining and Concurrent Thinking}
-\label{sec:org7a5bf57}
+\label{sec:org1f418df}
 Pipelining allows for one process to start while another is finishing.
 Concurrency is when multiple processes are split into time slices and ordered into a schedule to be worked on.
 
@@ -157,7 +158,7 @@ The same can be said for pipelining, which is a mainstay in most contemporary CP
 These two methods will not need to be explicitly implemented in my code because these are implicit optimizations that are autonomous.
 
 \subsubsection{Performance Modelling}
-\label{sec:orged514ef}
+\label{sec:orgfae8381}
 Performance modelling means analysing the performance of algorithms to determine what processes are taking up the most time and addressing them accordingly.
 It is vital for the game to run smoothly so that there is minimal delay between the player’s input and what appears on screen.
 Excessive frame drops and delayed input can make the game cumbersome to play.
@@ -170,7 +171,7 @@ Optimisations can then be achieved based on this data.
 However, knowing the Big O is arguably more beneficial as the time for an algorithm to compute will very across hardware configurations.
 
 \subsubsection{Thinking Ahead}
-\label{sec:org957bc11}
+\label{sec:org730b26f}
 This refers to the careful planning to make sure the project is completed to a good standard and within time.
 Thinking ahead is useful as it allows you to determine how much time should be spent on each key part of the solution.
 
@@ -184,7 +185,7 @@ In software this can be a web cache in local storage, in hardware this can be a 
 All modern consumer grade CPUs have a cache that is used implicitly, so I do not need to implement caching in my code.
 
 \subsubsection{Stakeholders}
-\label{sec:orgd526c01}
+\label{sec:org8dc0009}
 This game can attract a variety of stakeholders, like how the original arcade release aimed to satisfy a wide demographic.
 These stakeholders include:
 
@@ -217,7 +218,7 @@ An aspect of my solution that will be a priority.
 \end{itemize}
 
 \section{Researching Existing Solutions}
-\label{sec:org31e8037}
+\label{sec:orge36864e}
 To replicate the game play of the original Pac-Man, I needed to do some research on existing solutions.
 This involved a dive into the original algorithm that dictates how the ghosts traverse the maze, their unique behaviour, and their various states.
 With this knowledge I will be able to confidently translate these algorithms into Python and Pygame.
@@ -227,7 +228,7 @@ Some offer simple quality-of-life improvements, to adding whole new mechanics.
 I will assess these features and decide whether to implement them or not.
 
 \subsection{Pac-Man (A Look into Ghost Movement and Behaviour)}
-\label{sec:orgf5f84a7}
+\label{sec:org60cd4d3}
 One of the reasons I decided to do this project was because of this comprehensive video I watched a while ago from a YouTube channel called Retro Game Mechanics Explained.
 The video goes over every facet of the ghosts’ behaviours in detail.
 
@@ -280,7 +281,7 @@ This is obviously a bug, therefore I won’t replicate it in my solution.
 \end{figure}
 
 \subsection{Ms. Pac-Man}
-\label{sec:orgc0d21d5}
+\label{sec:org1f6245b}
 \label{Ms. Pac-Man}
 Released in 1982 by publisher Midway, Ms Pac-Man is the questionably licensed sequel to Namco’s original arcade release.
 
@@ -314,7 +315,7 @@ While I will not consider adding this for the meantime. I may add it if I can us
 \end{itemize}
 
 \subsection{Pac-Man Championship Edition (CE)}
-\label{sec:org44448c8}
+\label{sec:orgee74b16}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.50\linewidth]{./img/analysis/champ/midgame.jpg}
@@ -354,7 +355,7 @@ Though some of my stakeholders likely the children - may want these assistive ef
 \end{itemize}
 
 \subsection{Pac-Mania}
-\label{sec:org76e975a}
+\label{sec:org2cd9b7f}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.33\linewidth]{./img/analysis/mania/midgame.jpg}
@@ -378,6 +379,45 @@ The extra ghosts may also cramp up the small maze and confuse the player.
 \item Eating bonus fruit will speed up Pac-Man, serving as a power-up in distancing him from the ghosts, but also a power-down since it makes it harder to navigate the maze.
 This seems like a nice twist to gameplay, but I will need to see whether this will play nice in the smaller maze of the original.
 \end{itemize}
+
+\subsection{What and What not to Add}
+\label{sec:org1d98bae}
+Here is a table summarising the extra features that I would like and would not like to feature in my solution.
+I feel like my choices show that I only want to make conservative additions/changes.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{XXX}
+\hline
+\textbf{Will Add} & \textbf{Tentative (depends on time left and stakeholder feedback)} & \textbf{Will not Add}\\[0pt]
+\hline
+Solid colour for maze walls. & Multiple maze layouts (two pairs of tunnels). & Clustered pellets.\\[0pt]
+\hline
+ & Moving bonus fruit. & Sleeping ghosts.\\[0pt]
+\hline
+ & Initially random ghost movement. & More than four ghosts.\\[0pt]
+\hline
+ & Assistive effects like slow-motion and bombs. & Jumping for Pac-Man and ghosts.\\[0pt]
+\hline
+\end{tabularx}
+\end{center}
+
+\subsection{Features of the Solution}
+\label{sec:org3a9bac2}
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+*Feature* & *Source of Feature* & *Essential?* & *Description* & *Explanation* \\
+\hline
+The player & research & yes & Pac-Man will move & \\
+must be able & & & accordingly to the & \\
+to control & & & player pressing & \\
+Pac-Man in & & & the movement & \\
+four & & & keys. & \\
+cardinal & & & & \\
+directions. & & & & \\
+\hline
+\end{tabular}
+\end{center}
 
 \printbibliography
 \end{document}

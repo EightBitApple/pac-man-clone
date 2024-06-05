@@ -1,4 +1,5 @@
 #+BIBLIOGRAPHY: bib/sources.bib
+#+LATEX_HEADER: \usepackage{tabularx}
 * Analysis
 ** Identifying the Problem (An Explanation of Pac-Man)
 Pac-Man is a 1980 arcade game developed and published by Bandai Namco in Japan.
@@ -284,3 +285,35 @@ Released in 1987 for arcades, Pac-Mania is an isometric representation of the or
 
 + Eating bonus fruit will speed up Pac-Man, serving as a power-up in distancing him from the ghosts, but also a power-down since it makes it harder to navigate the maze.
   This seems like a nice twist to gameplay, but I will need to see whether this will play nice in the smaller maze of the original.
+
+** What and What not to Add
+Here is a table summarising the extra features that I would like and would not like to feature in my solution.
+I feel like my choices show that I only want to make conservative additions/changes.
+
+#+ATTR_LATEX: :environment tabularx :width \textwidth :align XXX
+|------------------------------+-------------------------------------------------------------+---------------------------------|
+| *Will Add*                   | *Tentative (depends on time left and stakeholder feedback)* | *Will not Add*                  |
+| <32>                         | <32>                                                        | <32>                            |
+|------------------------------+-------------------------------------------------------------+---------------------------------|
+| Solid colour for maze walls. | Multiple maze layouts (two pairs of tunnels).               | Clustered pellets.              |
+|                              |                                                             |                                 |
+|------------------------------+-------------------------------------------------------------+---------------------------------|
+|                              | Moving bonus fruit.                                         | Sleeping ghosts.                |
+|------------------------------+-------------------------------------------------------------+---------------------------------|
+|                              | Initially random ghost movement.                            | More than four ghosts.          |
+|------------------------------+-------------------------------------------------------------+---------------------------------|
+|                              | Assistive effects like slow-motion and bombs.               | Jumping for Pac-Man and ghosts. |
+|------------------------------+-------------------------------------------------------------+---------------------------------|
+
+** Features of the Solution
+#+ATTR_LATEX: :environment tabularx :width \textwidth :align XXXXX
+| *Feature*    | *Source*     | *Essential?* | *Description*      | *Explanation* |
+|              | *of Feature* |              |                    |               |
+|--------------+--------------+--------------+--------------------+---------------|
+| The player   | research     | yes          | Pac-Man will move  |               |
+| must be able |              |              | accordingly to the |               |
+| to control   |              |              | player pressing    |               |
+| Pac-Man in   |              |              | the movement       |               |
+| four         |              |              | keys.              |               |
+| cardinal     |              |              |                    |               |
+| directions.  |              |              |                    |               |
