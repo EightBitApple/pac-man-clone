@@ -290,30 +290,186 @@ Released in 1987 for arcades, Pac-Mania is an isometric representation of the or
 Here is a table summarising the extra features that I would like and would not like to feature in my solution.
 I feel like my choices show that I only want to make conservative additions/changes.
 
-#+ATTR_LATEX: :environment tabularx :width \textwidth :align XXX
-|------------------------------+-------------------------------------------------------------+---------------------------------|
-| *Will Add*                   | *Tentative (depends on time left and stakeholder feedback)* | *Will not Add*                  |
-| <32>                         | <32>                                                        | <32>                            |
-|------------------------------+-------------------------------------------------------------+---------------------------------|
-| Solid colour for maze walls. | Multiple maze layouts (two pairs of tunnels).               | Clustered pellets.              |
-|                              |                                                             |                                 |
-|------------------------------+-------------------------------------------------------------+---------------------------------|
-|                              | Moving bonus fruit.                                         | Sleeping ghosts.                |
-|------------------------------+-------------------------------------------------------------+---------------------------------|
-|                              | Initially random ghost movement.                            | More than four ghosts.          |
-|------------------------------+-------------------------------------------------------------+---------------------------------|
-|                              | Assistive effects like slow-motion and bombs.               | Jumping for Pac-Man and ghosts. |
-|------------------------------+-------------------------------------------------------------+---------------------------------|
++ *Will add:*:
+  + Solid colour for maze walls.
+
++ *Tentative (depends on time left and stakeholder feedback):*
+  + Multiple maze layouts (two pairs of tunnels).
+  + Moving bonus fruit.
+  + Initially random ghost movement.
+  + Assistive effects like slow-motion and bombs.
+
++ *Will not add:*
+ + Clustered pellets.
+ + Sleeping ghosts.
+ + More than four ghosts.
+ + Jumping for Pac-Man and ghosts.
 
 ** Features of the Solution
-#+ATTR_LATEX: :environment tabularx :width \textwidth :align XXXXX
-| *Feature*    | *Source*     | *Essential?* | *Description*      | *Explanation* |
-|              | *of Feature* |              |                    |               |
-|--------------+--------------+--------------+--------------------+---------------|
-| The player   | research     | yes          | Pac-Man will move  |               |
-| must be able |              |              | accordingly to the |               |
-| to control   |              |              | player pressing    |               |
-| Pac-Man in   |              |              | the movement       |               |
-| four         |              |              | keys.              |               |
-| cardinal     |              |              |                    |               |
-| directions.  |              |              |                    |               |
+  + *The player must be able to control Pac-Man in four cardinal directions.*
+    + Source: research.
+    + Essential.
+    + Pac-Man will move accordingly to the player pressing the movement keys.
+    + Moving Pac-Man will allow the player to achieve their goal of eating all the pellets.
+
+
+  + *Maze must be loaded and rendered correctly.*
+    + Source: research.
+    + Essential.
+    + The maze must load in within a reasonable amount of time and render correctly.
+    + Gives the player a sense of their surroundings and allows them to correctly navigate the maze.
+
+
+  + *Pellets and power pellets must be rendered within the maze.*
+    + Source: research.
+    + Essential.
+    + Pellets and power pellets must be loaded and rendered alongside the maze.
+    + Provides the player with the goal of eating all the pellets.
+
+
+  + *Ghosts must use an algorithm to navigate the maze.*
+    + Source: research.
+    + Essential.
+    + The ghosts will use the same algorithm as the original release.
+      Each cardinal direction is evaluated and omitted if it leads into a wall or back to where the ghost came.
+      If the direction passes, the distance between the next tile and target tile is calculated.
+      The direction with the shortest distance will be picked.
+    + Gives the player the challenge of avoiding the ghosts.
+
+
+  + *Each ghost must replicate their unique behaviour from the original.*
+    + Source: research.
+    + Essential.
+    + Each ghost will target a different tile to navigate to.
+      During chases mode, Blinky and Clyde’s tile will be on Pac-Man, Pinky two tiles ahead of Pac-Man and Inky a tile calculated using Pinky’s tile and Blinky’s position.
+    + More challenge for the player since they must memorise the behaviour of each ghost.
+
+
+  + *Ghosts must switch between scatter and chase modes according to a timer.*
+    + Source: research.
+    + Essential.
+    + Each ghost will monitor a timer and switching between chasing Pac-Man and fleeing to the corners of the maze.
+    + Scatter mode will allow the player to take a short break from the pursuit.
+
+
+  + *Ghosts must become temporarily frightened when Pac-Man eats a power pellet.*
+    + Source: research.
+    + Essential.
+    + The ghosts will turn blue, turn around and move in random directions for several seconds.
+    + A pivotal part of the gameplay loop; it allows the player to eat them.
+
+
+  + *Pac-Man must be able to eat frightened ghosts.*
+    + Source: research.
+    + Essential.
+    + Once eaten, a ghost will become a pair of eyes and flee back to the ghost house to regenerate.
+      The player is rewarded with bonus points.
+    + Completes the gameplay loop of Pac-Man being hunted by the ghosts and turning the tables to hunt them instead.
+
+
+  + *The level must be considered complete when Pac-Man eats all the pellets.*
+    + Source: research.
+    + Essential.
+    + After eating all the pellets, the ghosts will disappear, and Pac-Man will remain still for several seconds while the maze flashes white.
+      The game will then proceed to the next level.
+    + Tells the player that they passed the level.
+
+
+  + *The bonus fruit must appear to be eaten.*
+    + Source: research.
+    + Essential.
+    + A fruit will appear in a fixed location in the maze after some time has elapsed in the maze.
+      Pac-Man can eat this to get bonus points.
+    + Gives the player a small extra challenge that shouldn’t take long to program in.
+
+
+  + *Pac-Man must die when he gets caught by an un-frightened ghost.*
+    + Source: research.
+    + Essential.
+    + When caught, Pac-Man will remain frozen in place and playout his death animation and loses a life.
+      If he still has lived the player would resume the level, else they’ll see a game over screen.
+    + Adds stakes to the game.
+      The player will be incentivised to not make too many mistakes.
+
+
+  + *The time spent between scatter and chase modes decreases over time.*
+    + Source: research.
+    + Essential.
+    + After being in scatter mode for three times, the next scatter will only last 5 seconds instead of 7.
+    + Adds a difficulty curve to the game.
+
+
+  + *Blinky will always be in chase mode when there is only a few pellets left in the maze.*
+    + Source: research.
+    + Essential.
+    + Blinky will always target Pac-Man when there is 20 or less pellets left.
+    + Adds a difficulty curve to the game.
+
+
+  + *Ghost behaviour will become more aggressive the more levels the player completes.*
+    + Source: research.
+    + Essential.
+    + The initial durations between scatter and case mode will become smaller the more levels are completed.
+    + Adds a difficulty curve to the game.
+
+
+  + *Blinky and Pinky’s random movement.*
+    + Source: research.
+    + Essential.
+    + Blinky and Pinky will behave like they’re in frighted mode for the first couple of seconds of a level.
+    + Adds a ripple to gameplay that can catch out experienced players.
+      It will also add to the algorithmic complexity of the ghosts.
+
+
++ *Replicate ‘up’ unit vector overflow error.*
+  + Source: research.
+  + Not essential.
+  + In the original release.
+    The code that handles adding magnitude to unit vectors. treats the x and y components as one 16-bit value rather than two 8-bit ones, leading to the multiplication in the y component overflowing into the x.
+  + I decided to reject this since it’s obviously a bug, likely unintended by the developers.
+
++ *Title Screen*
+  + Source: own idea.
+  + Essential.
+  + Displays the title of the game along with a prompt asking the user to press a key to begin the game.
+  + Allows the player time to prepare before playing.
+
++ *Pause Screen*
+  + Source: own idea, stakeholders.
+  + Essential.
+  + Pause and resume execution of the game on demand using a key stroke.
+  + Allows the player to readjust their posture and or have a break.
+
++ *Pause screen menu.*
+  + Source: own idea.
+  + Not essential.
+  + A menu appears upon pausing the game, asking the player if they want to resume or quit.
+  + While a nice feature in terms of player accessibility.
+    This functionality can be replicated using key strokes, therefore it’s not essential.
+
++ *Solidly coloured maze walls.*
+  + Source: research, stakeholders.
+  + Essential.
+  + Maze walls will consist of a solid colour instead of outlines.
+  + Makes it easier for the player to see the maze, especially if the player is visually impaired and or is playing on a small display.
+
++ *High score and leader board system.*.
+  + Source: stakeholders.
+  + Not essential.
+  + High scores will be saved and added to a leader board to compare.
+  + Enables a sense of competition among players.
+    I decided to omit this feature in the interest of time.
+
++ *Multiple mazes.*
+  + Source: research stakeholders.
+  + Not essential.
+  + Each level will have one of four mazes, each with a unique layout.
+  + Provides come variety to the game.
+  + Will be omitted or added later in the interest of time.
+
++ *Bouncing bonus fruit.*
+  + Source: research.
+  + Not essential.
+  + The bonus fruit that appears will move around the maze like a ghost.
+  + Adds a ripple to by making the player pay attention to both the fruit and ghosts.
+  + Decided to omit this feature due to the aforementioned confusion it can cause in novice players.
