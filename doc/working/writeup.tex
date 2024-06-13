@@ -1,4 +1,4 @@
-% Created 2024-06-09 Sun 17:50
+% Created 2024-06-13 Thu 12:57
 % Intended LaTeX compiler: pdflatex
 \documentclass[letterpaper, 11pt]{article}
                       \usepackage{lmodern} % Ensures we have the right font
@@ -55,15 +55,15 @@
 
 
 \section{Introduction}
-\label{sec:orgda3d5e5}
+\label{sec:orgafdfc6a}
 This project aims to develop a program serving as a recreation of the 1980 coin-op arcade game Pac-Man, using both the household high-level programming language Python and a 3rd party library to enable game development, Pygame.
 The project aims at creating a rather conservative recreation of the original.
 The core gameplay loop will be retained as much as possible by researching the original game’s mechanics, namely the mechanics of the ghosts: the algorithms that dictate where they will move, where they will move to and how to react to key game play moments.
 Any features outside gameplay will be mostly cosmetic and or serves as a quality-of-life improvement for the player.
 \section{Analysis}
-\label{sec:orgb3b9c67}
+\label{sec:orgb86c8af}
 \subsection{Identifying the Problem (An Explanation of Pac-Man)}
-\label{sec:org8ea35e7}
+\label{sec:org230626c}
 Pac-Man is a 1980 arcade game developed and published by Bandai Namco in Japan.
 And published by Midway Games in North America.
 Despite initially receiving lukewarm reception in Japan, the game showed both critical and commercial success outside the nation and the franchise remains one of the highest-grossing video game series of all time.
@@ -88,12 +88,12 @@ They also alternate between behaviour states during a level, namely chase mode �
 \end{figure}
 
 \subsection{Solving the Problem using Computational Methods}
-\label{sec:orgca0c3a0}
+\label{sec:orgf19ad91}
 \label{Solving the Problem using Computational Methods}
 One of the reasons I chose Pac-Man for my coursework is because I believe it serves as a good example on how computational methods can be applied to a large project to make it more approachable.
 
 \subsubsection{Abstraction}
-\label{sec:org974c699}
+\label{sec:orgc4bcbbe}
 Abstraction helps in reducing the amount of hardware resources taken up by the program, ensuring that performance is optimal on the range of target systems.
 An abstract model will serve as a representation of reality, only functioning in the ways it needs to.
 
@@ -113,7 +113,7 @@ The entities can only move in cardinal directions.
 With the source material already being abstracted, it is easy to find and implement the core mechanics into my project such as the player movement, ghost behaviour and ghost states while ignoring more superfluous aspects like cut-scenes between levels.
 
 \subsubsection{Decomposition}
-\label{sec:org502c450}
+\label{sec:org76c1638}
 For complex problems like this, decomposition is invaluable for breaking it down into simpler, more manageable chunks that can be prioritised, developed, and tested individually.
 It makes life so much easier on the developer’s end.
 
@@ -126,7 +126,7 @@ For ghosts, it is their movement algorithm and behaviour states.
 Once the game is fully decomposed, the components can then be prioritised, such as the maze being implemented before the gameplay since the maze will house all the gameplay.
 
 \subsubsection{Logic, Branching and Iteration}
-\label{sec:orgec76466}
+\label{sec:org4084bcc}
 These are pivotal for adding interactivity and dynamism to the solution.
 Without these the code is completely linear and with little to no meaningful interactivity, which is not optimal for a game, a program that is supposed to react to user input.
 
@@ -144,7 +144,7 @@ A main game loop will be used to clear the screen, update the entities, and refr
 Iteration will also be used in entity behaviour; the ghosts will iterate through each cardinal direction to decide what direction to move in.
 
 \subsubsection{Pipelining and Concurrent Thinking}
-\label{sec:org1476497}
+\label{sec:org9d99adc}
 Pipelining allows for one process to start while another is finishing.
 Concurrency is when multiple processes are split into time slices and ordered into a schedule to be worked on.
 
@@ -158,7 +158,7 @@ The same can be said for pipelining, which is a mainstay in most contemporary CP
 These two methods will not need to be explicitly implemented in my code because these are implicit optimizations that are autonomous.
 
 \subsubsection{Performance Modelling}
-\label{sec:org20b12b0}
+\label{sec:org61481b4}
 Performance modelling means analysing the performance of algorithms to determine what processes are taking up the most time and addressing them accordingly.
 It is vital for the game to run smoothly so that there is minimal delay between the player’s input and what appears on screen.
 Excessive frame drops and delayed input can make the game cumbersome to play.
@@ -171,7 +171,7 @@ Optimisations can then be achieved based on this data.
 However, knowing the Big O is arguably more beneficial as the time for an algorithm to compute will very across hardware configurations.
 
 \subsubsection{Thinking Ahead}
-\label{sec:orgf75242f}
+\label{sec:orga5eee48}
 This refers to the careful planning to make sure the project is completed to a good standard and within time.
 Thinking ahead is useful as it allows you to determine how much time should be spent on each key part of the solution.
 
@@ -185,7 +185,7 @@ In software this can be a web cache in local storage, in hardware this can be a 
 All modern consumer grade CPUs have a cache that is used implicitly, so I do not need to implement caching in my code.
 
 \subsubsection{Stakeholders}
-\label{sec:orgf4b7e40}
+\label{sec:org06336fe}
 This game can attract a variety of stakeholders, like how the original arcade release aimed to satisfy a wide demographic.
 These stakeholders include:
 
@@ -218,7 +218,7 @@ An aspect of my solution that will be a priority.
 \end{itemize}
 
 \section{Researching Existing Solutions}
-\label{sec:org11cf472}
+\label{sec:orgfd25db1}
 To replicate the game play of the original Pac-Man, I needed to do some research on existing solutions.
 This involved a dive into the original algorithm that dictates how the ghosts traverse the maze, their unique behaviour, and their various states.
 With this knowledge I will be able to confidently translate these algorithms into Python and Pygame.
@@ -228,7 +228,7 @@ Some offer simple quality-of-life improvements, to adding whole new mechanics.
 I will assess these features and decide whether to implement them or not.
 
 \subsection{Pac-Man (A Look into Ghost Movement and Behaviour)}
-\label{sec:orgc0f7d56}
+\label{sec:orgb34dbee}
 One of the reasons I decided to do this project was because of this comprehensive video I watched a while ago from a YouTube channel called Retro Game Mechanics Explained.
 The video goes over every facet of the ghosts’ behaviours in detail.
 
@@ -281,7 +281,7 @@ This is obviously a bug, therefore I won’t replicate it in my solution.
 \end{figure}
 
 \subsection{Ms. Pac-Man}
-\label{sec:orgddd7394}
+\label{sec:orgfed377a}
 \label{Ms. Pac-Man}
 Released in 1982 by publisher Midway, Ms Pac-Man is the questionably licensed sequel to Namco’s original arcade release.
 
@@ -315,7 +315,7 @@ While I will not consider adding this for the meantime. I may add it if I can us
 \end{itemize}
 
 \subsection{Pac-Man Championship Edition (CE)}
-\label{sec:orgc1681ec}
+\label{sec:org230af21}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.50\linewidth]{./img/analysis/champ/midgame.jpg}
@@ -355,7 +355,7 @@ Though some of my stakeholders likely the children - may want these assistive ef
 \end{itemize}
 
 \subsection{Pac-Mania}
-\label{sec:org72354f7}
+\label{sec:orgea94dad}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.33\linewidth]{./img/analysis/mania/midgame.jpg}
@@ -381,7 +381,7 @@ This seems like a nice twist to gameplay, but I will need to see whether this wi
 \end{itemize}
 
 \subsection{What and What not to Add}
-\label{sec:orge1a6947}
+\label{sec:orgfdf4a3b}
 Here is a table summarising the extra features that I would like and would not like to feature in my solution.
 I feel like my choices show that I only want to make conservative additions/changes.
 
@@ -409,7 +409,7 @@ I feel like my choices show that I only want to make conservative additions/chan
 \end{itemize}
 
 \subsection{Features of the Solution}
-\label{sec:org71951a5}
+\label{sec:org173e079}
 \begin{itemize}
 \item \textbf{The player must be able to control Pac-Man in four cardinal directions.}
 \begin{itemize}
@@ -653,6 +653,103 @@ I decided to omit this feature in the interest of time.
 \item The bonus fruit that appears will move around the maze like a ghost.
 \item Adds a ripple to by making the player pay attention to both the fruit and ghosts.
 \item Decided to omit this feature due to the aforementioned confusion it can cause in novice players.
+\end{itemize}
+\end{itemize}
+
+\section{Limitations}
+\label{sec:org8d89cf5}
+This project will not end up being a feature rich or ‘complete’ remake of Pac-Man.
+I want to make an expressed focus on implementing the core mechanics of the original game and extra features afterwards.
+These extra features will be simple to implement, like solidly coloured walls, as to not distract from the progress of implementing the core features.
+Pac-Man’s movement, the ghosts’ movement, win and lose conditions and behaviour states are deemed the most essential and will receive the most attention.
+Features like bouncing bonus fruit, multiple mazes and a high score system will be either omitted outright or have a chance of being implemented later.
+My omission of curtain features is done so that I know I have enough time to finish implanting the core features before the deadline.
+One example is a pause menu.
+Instead of the player clinking on a button to resume the game, they can instead press a key like escape to achieve the same thing.
+This saves me from having to program a pause menu and figure out its design, allowing me to focus on the core features.
+
+\section{Requirements for the Solution}
+\label{sec:org5ac2d6e}
+The project will be developed on a Microsoft Windows machine, but will have multi-platform compatibility in mind.
+While Python and Pygame are multi-platform, I still need to look out for subtle differences.
+One example is using backward slashes for directories in my code despite forward slashes being used in *nix systems.
+Pythons built in module ‘os’ will solve this discrepancy.
+
+For this project to succeed, I would need to:
+
+\begin{itemize}
+\item Have access to a computer running an operating system compatible with Python and Pygame.
+\item Use the programming language Python with modules from its standard library and any external libraries when necessary.
+\item Use the game library Pygame and all its relevant functions and methods.
+\item Use an image manipulation program to edit sprites and make concepts.
+\end{itemize}
+
+\subsection{System Requirements}
+\label{sec:orgc018c4d}
+\begin{itemize}
+\item OpenGL API for graphics rendering.
+\item OpenAL API for audio.
+\item MinGW 4.8.1 or Microsoft Visual C++ Express 2010 (MSVC).
+\item OpenAL Windows driver.
+\item Operating Systems: Linux, Windows, MacOS, Free BSD, Open BSD \autocite{pygameAbout} \autocite{SDLIntro}.
+\end{itemize}
+
+Failure to meet these requirements will lead to the development of the game being delayed or in the worst case, unable to continue.
+In terms of the end user, their hardware and or software may not be powerful enough to run the game or is missing essential requirements for Pygame to operate correctly, such as OpenGL.
+But most devices today should meet these relatively low system requirements.
+
+\subsection{Success Criteria}
+\label{sec:orgd5a32bd}
+\begin{itemize}
+\item \textbf{Make the game boot up and display a window.}
+\begin{itemize}
+\item Category: functionality.
+\item Measurement: development testing.
+\item This is the only means for the player to access and interact with the game.
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Have the game be able to display Pac-man and be capable of switching between animation frames.}
+\begin{itemize}
+\item Category: functionality.
+\item Measurement: development testing.
+\item Pac-man will be the object that the player controls, it be the most focused on aspect in the game.
+It is important that Pac-man looks good.
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{The player can press another movement key while holding another and Pac-Man will update his movement to the newly pressed key.}
+\begin{itemize}
+\item Category: Usability, robustness.
+\item Measurement: development testing.
+\item Pac-man’s movement must not only feel responsive, but also initiative for new and experienced players.
+A new player may need time to get a grasp of the controls, which means their fingers may get muddled.
+Pac-Man responding to the last key pressed ensures that he promptly responds to player intentions.
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Have Pac-Man be able to move in all four directions while keeping aligned to the grid of tiles.}
+\begin{itemize}
+\item Category: functionality, robustness.
+\item Measurement: development testing.
+\item Allows the player to make Pac-man fully traverse the maze and avoid the ghosts, keeping Pac-man fixed to the tiles will prevent Pac-man from clipping out of the maze.
+\end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Allow Pac-Man to move smoothly between the tiles.}
+\begin{itemize}
+\item Category: usuability, cosmetic.
+\item Measurement: development testing.
+\item The smooth movement will give the player the enough reaction time to decide whether they should turn a corner or continue to move forward.
+It also ensures that Pac-man looks good and feels good to move.
 \end{itemize}
 \end{itemize}
 

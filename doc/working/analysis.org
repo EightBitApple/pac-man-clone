@@ -473,3 +473,80 @@ I feel like my choices show that I only want to make conservative additions/chan
   + The bonus fruit that appears will move around the maze like a ghost.
   + Adds a ripple to by making the player pay attention to both the fruit and ghosts.
   + Decided to omit this feature due to the aforementioned confusion it can cause in novice players.
+
+* Limitations
+This project will not end up being a feature rich or ‘complete’ remake of Pac-Man.
+I want to make an expressed focus on implementing the core mechanics of the original game and extra features afterwards.
+These extra features will be simple to implement, like solidly coloured walls, as to not distract from the progress of implementing the core features.
+Pac-Man’s movement, the ghosts’ movement, win and lose conditions and behaviour states are deemed the most essential and will receive the most attention.
+Features like bouncing bonus fruit, multiple mazes and a high score system will be either omitted outright or have a chance of being implemented later.
+My omission of curtain features is done so that I know I have enough time to finish implanting the core features before the deadline.
+One example is a pause menu.
+Instead of the player clinking on a button to resume the game, they can instead press a key like escape to achieve the same thing.
+This saves me from having to program a pause menu and figure out its design, allowing me to focus on the core features.
+
+* Requirements for the Solution
+The project will be developed on a Microsoft Windows machine, but will have multi-platform compatibility in mind.
+While Python and Pygame are multi-platform, I still need to look out for subtle differences.
+One example is using backward slashes for directories in my code despite forward slashes being used in *nix systems.
+Pythons built in module ‘os’ will solve this discrepancy.
+
+For this project to succeed, I would need to:
+
++ Have access to a computer running an operating system compatible with Python and Pygame.
++ Use the programming language Python with modules from its standard library and any external libraries when necessary.
++ Use the game library Pygame and all its relevant functions and methods.
++ Use an image manipulation program to edit sprites and make concepts.
+
+** System Requirements
++ OpenGL API for graphics rendering.
++ OpenAL API for audio.
++ MinGW 4.8.1 or Microsoft Visual C++ Express 2010 (MSVC).
++ OpenAL Windows driver.
++ Operating Systems: Linux, Windows, MacOS, Free BSD, Open BSD [cite:@pygameAbout] [cite:@SDLIntro].
+
+Failure to meet these requirements will lead to the development of the game being delayed or in the worst case, unable to continue.
+In terms of the end user, their hardware and or software may not be powerful enough to run the game or is missing essential requirements for Pygame to operate correctly, such as OpenGL.
+But most devices today should meet these relatively low system requirements.
+
+** Success Criteria
++ *Make the game boot up and display a window.*
+  + Category: functionality.
+  + Measurement: development testing.
+  + This is the only means for the player to access and interact with the game.
+
+
++ *Have the game be able to display Pac-man and be capable of switching between animation frames.*
+  + Category: functionality.
+  + Measurement: development testing.
+  + Pac-man will be the object that the player controls, it be the most focused on aspect in the game.
+    It is important that Pac-man looks good.
+
+
++ *The player can press another movement key while holding another and Pac-Man will update his movement to the newly pressed key.*
+  + Category: usability, robustness.
+  + Measurement: development testing.
+  + Pac-man’s movement must not only feel responsive, but also initiative for new and experienced players.
+    A new player may need time to get a grasp of the controls, which means their fingers may get muddled.
+    Pac-Man responding to the last key pressed ensures that he promptly responds to player intentions.
+
+
++ *Have Pac-Man be able to move in all four directions while keeping aligned to the grid of tiles.*
+  + Category: functionality, robustness.
+  + Measurement: development testing.
+  + Allows the player to make Pac-man fully traverse the maze and avoid the ghosts, keeping Pac-man fixed to the tiles will prevent Pac-man from clipping out of the maze.
+
+
++ *Allow Pac-Man to move smoothly between the tiles.*
+  + Category: usability, cosmetic.
+  + Measurement: development testing.
+  + The smooth movement will give the player the enough reaction time to decide whether they should turn a corner or continue to move forward.
+    It also ensures that Pac-man looks good and feels good to move.
+
++ *Allow the turning of corners to not be pixel perfect.*
+  + Category: usability.
+  + Measurement: development testing, interview.
+  + Prevents the player having to fight the controls by ensuring that Pac-Man’s collision is perfectly aligned to turn corners.
+    This will make the game feel more intuitive.
+
+    Stakeholders can be asked about how the game feels to control to inform development.
