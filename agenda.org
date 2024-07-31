@@ -1,7 +1,8 @@
 #+title: Agenda
 
 Things to do in no particular order.
-* TODO Use Nix Flakes to make a developer environment in a Nix Shell with dependencies installed.
+* DONE Use Nix Flakes to make a developer environment in a Nix Shell with dependencies installed.
+CLOSED: [2024-07-31 Wed 19:51]
 * TODO Use Nix Flakes to generate a Docker image.
 * TODO Port documentation from DOCX to PDF.
 * TODO Fix or remove the high score encryption.
